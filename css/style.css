@@ -1,0 +1,412 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p {
+    opacity: 0.5;
+}
+
+/* Styling of the header */
+
+header {
+    padding: 20px 200px;
+}
+
+.site-logo {
+    width: 30%;
+    float: left;
+}
+
+.main-nav {
+    list-style: none;
+    width: 60%;
+    float: right;
+    text-align: end;
+    padding-top: 5px;
+}
+
+.main-nav li {
+    display: inline-block;
+}
+
+.main-nav li a {
+    padding: 7px;
+    text-transform: capitalize;
+    color: black;
+    text-decoration: none;
+}
+
+.main-nav li a:hover {
+    color: #36adb9;
+}
+
+.main-nav .active {
+    color: #36adb9;
+    font-weight: bolder;
+}
+
+/* Main body of the page */
+
+main {
+    clear: both;
+}
+
+/* landing page */
+
+.landing-page {
+    padding: 50px 100px 50px 200px;
+    margin-bottom: 300px;
+}
+
+.landing-text {
+    width: 40%;
+    float: left;
+    padding-top: 100px;
+}
+
+.landing-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.landing-text button {
+    width: 180px;
+    height: 60px;
+    margin-top: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: #dbf2f3;
+    color: #36adb9;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+}
+
+.landing-text button:hover {
+    background-color: #36adb9;
+    color: #dbf2f3;
+}
+
+.landing-img {
+    float: right;
+    width: 55%;
+}
+
+.landing-img img {
+    width: 100%;
+}
+
+.service {
+    clear: both;
+    padding: 50px 300px 50px 200px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.service-heading {
+    width: 30%;
+    float: left;
+    margin-top: 150px;
+}
+
+.service-flexbox {
+    width: 60%;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    margin: 30px;
+    justify-content: space-between;
+}
+
+.service-flexbox div {
+    width: 45%;
+    text-align: justify;
+}
+
+.service h3 {
+    margin-bottom: 20px;
+}
+
+.service-heading h3 {
+    color: #36adb9;
+}
+
+.service h1 {
+    font-size: 2em;
+}
+
+.product {
+    clear: both;
+    padding: 50px 100px 50px 200px;
+}
+
+.product-heading {
+    width: 30%;
+    float: right;
+    margin-top: 200px;
+}
+
+.product-flexbox {
+    width: 50%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    justify-content: space-between;
+}
+
+.product-flexbox div {
+    height: 120px;
+    width: 100%;
+    padding: 0px 20px 20px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 7px 7px rgb(223, 221, 221);
+    border: solid 1px rgb(223, 221, 221);
+}
+
+.planning {
+    background-color: #62cbc5;
+    color: white;
+}
+
+.product h3 {
+    margin: 20px 0px;
+}
+
+.product-heading h3 {
+    color: #36adb9;
+}
+
+.product h1 {
+    font-size: 2em;
+}
+
+.product-flexbox img {
+    width: 12%;
+    float: left;
+    margin-top: 40px;
+}
+
+.product-flexbox p, .product-flexbox div h3 {
+    width: 80%;
+    float: right;
+}
+
+.product button {
+    width: 180px;
+    height: 60px;
+    margin-top: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: #dbf2f3;
+    color: #36adb9;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+}
+
+.product button:hover {
+    background-color: #36adb9;
+    color: #dbf2f3;
+}
+
+.partners {
+    clear: both;
+    padding: 50px 300px 50px 200px;
+}
+
+.partners-heading {
+    width: 30%;
+    float: left;
+    margin-top: 80px;
+}
+
+.partners h3 {
+    margin: 20px 0px;
+}
+
+.partners-heading h3 {
+    color: #36adb9;
+}
+
+.partners h1 {
+    font-size: 2em;
+}
+
+.partners article {
+    width: 50%;
+    float: right;
+    display: flex;
+    flex-direction: row;
+}
+
+.partners-flexbox {
+    flex-direction: column;
+    margin: 30px;
+    justify-content: space-between;
+}
+
+.partners-flexbox div {
+    height: 200px;
+    border-radius: 10px;
+    width: 200px;
+    margin-bottom: 50px;
+    text-align: center;
+    box-shadow: 7px 7px rgb(223, 221, 221);
+    border: solid 1px rgb(223, 221, 221);
+}
+
+.partners-flexbox div:hover {
+    opacity: 0.5;
+}
+
+.partners-flexbox div img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.partners-flexbox1 {
+    position: relative;
+    top: 40px;
+}
+
+.partners button {
+    width: 180px;
+    height: 60px;
+    margin-top: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: #dbf2f3;
+    color: #36adb9;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+}
+
+.partners button:hover {
+    background-color: #36adb9;
+    color: #dbf2f3;
+}
+
+.remarks {
+    clear: both;
+    padding: 50px 300px 50px 100px;
+}
+
+.remarks-heading {
+    width: 30%;
+    float: right;
+    margin-top: 80px;
+    position: relative;
+    left: 100px;
+    top: 60px;
+}
+
+.remarks-heading h3 {
+    color: #36adb9;
+    margin: 20px 0px;
+
+}
+
+.remarks h1 {
+    font-size: 2em;
+}
+
+.remarks-flexbox {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+.remarks-flexbox h3 {
+    color: #36adb9;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.remarks-flexbox div {
+    margin-bottom: 20px;
+}
+
+#middle {
+    padding-left: 300px;
+    margin: 30px 0px;
+}
+
+#middle img {
+    width: 100px;
+    margin-right: 20px;
+}
+
+#middle h3 {
+    margin-left: 3px;
+    margin-top: 20px;
+}
+
+#middle p {
+    position: static; 
+}
+
+.remarks-flexbox img {
+    border-radius: 300px;
+    width: 150px;
+    float: left;
+}
+
+.remarks-flexbox p {
+    position: relative;
+    left: 10px;
+    top: 30px;
+}
+
+.yearly {
+    clear: both;
+    padding: 50px 300px 50px 200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #36adb9;
+    box-shadow: 7px 7px 7px 7px rgb(223, 221, 221);
+    height: 200px;
+    padding-top: 140px;
+    color: #dbf2f3;
+}
+
+.yearly h1 {
+    font-size: 2em;
+}
+
+.yearly button {
+    width: 180px;
+    height: 60px;
+    margin-top: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: #dbf2f3;
+    color: #36adb9;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+}
+
+.yearly button:hover {
+    opacity: 0.5;
+}
+
+footer {
+    padding: 20px 200px;
+}
+
+footer p {
+    position: relative;
+    left: 170px;
+    bottom: 42px;
+}

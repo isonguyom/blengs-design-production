@@ -1,0 +1,455 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #36adb9;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-size: 100%;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/*------------------------------- Navigation ----------------------------------------*/
+
+nav {
+    padding: 1% 7%;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+}
+}
+
+.site-logo {
+    float: left;
+    display: block;
+}
+
+.active {
+  display: block;
+}
+
+.main-nav {
+    list-style: none;
+    float: right;
+    padding: 10px;
+    display: none;
+}
+
+.main-nav li a {
+    padding: 10% 0%;
+    line-height: 40px;
+    text-transform: capitalize;
+    color: black;
+    text-decoration: none;
+}
+
+.main-nav li a:hover {
+    color: var(--primary-color);
+}
+
+.main-nav .active {
+    color: var(--primary-color);
+    font-weight: bolder;
+}
+
+@media screen and (min-width: 760px) {
+    nav {
+        padding: 1% 12%;
+    }
+    .main-nav {
+        text-align: right;
+    }
+    .main-nav li  {
+    display: inline;
+    }
+
+    .main-nav li a {
+      line-height: 0;
+      padding: 10px;
+    }
+}
+
+/* ------------------------------------------------Main content ----------------------------------------------------- */
+main {
+  clear: both;
+
+}
+
+section {
+  clear: both;
+  margin: 5% 12%;
+}
+
+button {
+  width: 180px;
+  padding: 15px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: #dbf2f3;
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  font-weight: 700;
+  border: none;
+}
+
+button:hover {
+  background-color: var(--primary-color);
+  color: #dbf2f3;
+}
+
+p {
+  opacity: 0.7;
+  text-align: justify;
+  line-height: 1.2rem;
+}
+
+.landing-img {
+  margin-bottom: 17px;
+}
+
+.landing-text h1 {
+  font-size: 2.3rem;
+}
+
+.landing-text p {
+  margin: 25px 0;
+}
+
+@media screen and (min-width: 760px) {
+
+  .landing-img {
+    width: 65%;
+    float: right;
+    text-align: right;
+  }
+
+  .landing-text {
+    width: 35%;
+    float: left;
+    margin-top: 60px;
+  }
+}
+
+.intro {
+  color: var(--primary-color);
+}
+
+.heading {
+  margin: 30px 0;
+  line-height: 2rem;
+}
+
+.service, .partners, .remarks {
+  padding: 70px 0;
+}
+
+.service .flexbox div {
+ text-align: center;
+ padding: 5px 0;
+}
+
+h3 {
+  margin: 15px 0;
+}
+
+.service .flexbox p {
+  text-align: justify;
+}
+
+@media screen and (min-width: 760px) {
+  .service .flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .service .flexbox div {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .service {
+    margin-right: 15%;
+  }
+
+  .service .heading {
+    width: 30%;
+    float: left;
+    position: relative;
+    top: 180px;
+  }
+
+  .service .flexbox div {
+    margin-left: 7%;
+  }
+}
+
+.product {
+  padding: 70px 0;
+}
+
+.product button, .partners button {
+  margin: 15px 0;
+}
+
+.product .flexbox div {
+  width: 100%;
+  padding: 15px 5%;
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  box-shadow: 7px 7px rgb(223, 221, 221);
+  border: solid 1px rgb(223, 221, 221);
+}
+
+.product img {
+  width: 30%;
+  margin-bottom: 10px;
+}
+
+.planning {
+  background-color: #62cbc5;
+  color: white;
+}
+
+.planning p {
+  opacity: 0.9;
+}
+
+@media screen and (min-width: 716px) {
+  .product .flexbox {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product .flexbox img {
+    float: left;
+    margin-top: 4vh;
+    margin-right: 5%;
+    width: 18%;
+}
+.product .flexbox h3 {
+  text-align: left;
+}
+
+.product .flexbox h3, .product .flexbox p {
+  float: right;
+  width: 70%;
+  line-height: 1.3rem;
+}
+
+.product .flexbox div {
+  padding: 25px  5%;
+}
+}
+
+@media screen and (min-width: 1024px) {
+  .product .flexbox {
+    width: 60%;
+    float: left;
+    margin-right: 10%;
+  }
+
+  .product .flexbox img {
+    width: 15%;
+  }
+
+.product .heading {
+  float: right;
+  width: 30%;
+  position: relative;
+  top: 150px;
+}
+
+.product button {
+  position: relative;
+  top: 150px;
+}
+
+.product .flexbox h3, .product .flexbox p {
+  font-size: 1rem;
+}
+}
+
+.partners .flexbox div {
+  height: 200px;
+  border-radius: 10px;
+  width: 200px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 7px 7px rgb(223, 221, 221);
+  border: solid 1px rgb(223, 221, 221);
+}
+
+.partners .flexbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  vertical-align: middle;
+}
+
+.partners .flexbox div:hover {
+  opacity: 0.8;
+}
+
+@media screen and (min-width: 1000px) {
+  .partners .heading {
+    float: left;
+    width: 30%;
+    position: relative;
+    top: 130px;
+  }
+
+  .partners .flexbox {
+    width: 55%;
+  }
+}
+
+.remarks .flexbox div {
+  padding: 50px 0;
+  clear: both;
+}
+
+.remarks .flexbox img {
+  border-radius: 100%;
+  width: 150px;
+  margin: 7px auto;
+}
+
+@media screen and (min-width: 600px) {
+  .remarks .flexbox img {
+    float: left;
+  }
+
+  .remarks .flexbox p {
+    float: right;
+    width: 60%;
+    position: relative;
+    top: 25px;
+  }
+
+}
+
+@media screen and (min-width: 1000px) {
+  .remarks .flexbox {
+    float: left;
+    width: 60%;
+  }
+
+  .remarks .heading {
+    width: 30%;
+    float: right;
+    position: relative;
+    top: 180px;
+  }
+
+  #middle {
+    padding-left: 300px;
+    margin: 30px 0px;
+}
+
+#middle img {
+    width: 100px;
+    margin-right: 20px;
+}
+
+#middle h3 {
+    margin-left: 3px;
+    margin-top: 20px;
+}
+
+#middle p {
+    position: static; 
+}
+}
+
+.yearly {
+  text-align: center;
+  margin: 20px 0;
+  position: relative;
+  padding: 150px 10%;
+  top: 50px;
+  background-color: var(--primary-color);
+  box-shadow: 7px 7px 7px 7px rgb(223, 221, 221);
+  color: #dbf2f3;
+  box-sizing: content-box;
+  vertical-align: middle;
+}
+
+.yearly h1 {
+  font-size: 2rem;
+
+}
+
+.yearly button {
+  width: 250px;
+  margin-top: 30px;
+  cursor: pointer;
+  background-color: #dbf2f3;
+  color: #36adb9;
+}
+
+.yearly button:hover {
+  opacity: 0.8;
+}
+
+footer {
+  margin-top: 150px;
+  line-height: 2rem;
+}
+
+footer p {
+  position: relative;
+  left: 170px;
+  bottom: 42px;
+  text-align: left;
+}
+
+@media screen and (max-width: 880px) {
+  footer nav .main-nav {
+    float: none;
+    text-align: left;
+  }
+  
+  footer nav .main-nav li {
+    display: inline;
+  }
+  
+  footer nav .main-nav li a {
+    padding: 5px;
+  }
+
+  footer .site-logo {
+    float: none;
+  }
+}
